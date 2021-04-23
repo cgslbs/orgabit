@@ -1,0 +1,23 @@
+name: Publish Pages CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+
+  staging:
+    name: Static files
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: build
+      run: |
+        mkdir public
+        echo Coucou > public/index.html
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
