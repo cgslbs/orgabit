@@ -1,0 +1,59 @@
+.nav-bar {
+  height: 1080px;
+  width: 150px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+
+  .nav-logo {
+    padding-top: 59px;
+  }
+
+  .nav-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 539px;
+
+    .nav-divider {
+      border-left: 2px solid var(--line-yellow);
+      height: 47px;
+    }
+    .nav-search , nav-cart {
+      width: 20px;
+    }
+
+    .nav-burger img {
+      transition: 0.3s ease-in;
+      cursor: pointer;
+    }
+
+    .nav-burger img:hover {
+      transform: scale(1.1);
+    }
+  }
+
+
+  .nav-text {
+    height: 102px;
+    padding-bottom: 62px;
+    font: normal normal bold 20px/28px "acumin-pro";
+    letter-spacing: 0px;
+    text-transform: uppercase;
+
+    p {
+      transform: rotate(-90deg);
+    }
+
+    .orga-text {
+      color: var(--main-yellow);
+    }
+  }
+
+
+}
+

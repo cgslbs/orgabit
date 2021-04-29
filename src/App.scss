@@ -1,0 +1,116 @@
+.main-title {
+  margin-left: 150px;
+  padding-left: 435px;
+  padding-top: 140px;
+  width: 1074px;
+  h1 {
+    font: normal normal 900 150px/130px "acumin-pro";
+    letter-spacing: 7.5px;
+    color: var(--title-yellow);
+    margin-bottom: 30px;
+  }
+  .title-color {
+    color : var(--title-green)
+  }
+  p {
+    width: calc(977px - 78px);
+    padding: 39px;
+    background:rgba(255,255,255, 0.39);
+    font: normal normal bold 12px/14px "acumin-pro";
+    letter-spacing: 0.9px;
+  }
+  .main-btn {
+    margin-top: 34px;
+    border: transparent;
+    color: var(--white);
+    font: normal normal normal 12px/14px "acumin-pro";
+    letter-spacing: 0.9px;
+    padding: 13px 65px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: linear-gradient(90deg,var(--main-green) 50%,var(--main-yellow) 0);
+    background-size: 200%;
+    background-position: 100%;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+  }
+
+  .main-btn:hover {
+    background-position: 0;
+  }
+
+
+}
+
+.main-pagination {
+  margin-left: 150px;
+  .pagination {
+    padding-left: 53px;
+    width: 110px;
+    p {
+      font: normal normal bold 98px/16px "acumin-pro";
+      color: var(--main-yellow);
+      .size-pagination {
+        font: normal normal bold 29px/16px "acumin-pro";
+        letter-spacing: 2.17px;
+        .color-pagination {
+          color : var(--main-green);
+        }
+      }
+    }
+  }
+
+  .next-page {
+    position: absolute;
+    right: 60px;
+    bottom: 57px;
+    display: flex;
+
+    .next-page-text {
+      position: relative;
+      transform: rotate(-90deg);
+      left: calc(107px + 105px);
+
+      p {
+        font: normal normal bold 16px/22px "acumin-pro";
+        letter-spacing: 0;
+        .text-color {
+          display: block;
+          color: var(--main-yellow);
+          font: normal normal 400 12px/14px "acumin-pro";
+          letter-spacing: 0.9px;
+        }
+      }
+    }
+
+    img {
+      height: 107px;
+    }
+
+    a {
+      color: var(--white);
+      text-decoration: none;
+      z-index: 1;
+    }
+
+    .next-page-btn {
+      color: var(--white);
+      height: 107px;
+      width: 116px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(90deg,var(--main-green) 50%,var(--main-yellow) 0);
+      background-size: 200%;
+      background-position: 100%;
+      -webkit-transition: all 0.6s ease-out;
+      -moz-transition: all 0.6s ease-out;
+      transition: all 0.6s ease-out;
+    }
+
+    .next-page-btn:hover {
+      background-position: 0;
+    }
+  }
+}

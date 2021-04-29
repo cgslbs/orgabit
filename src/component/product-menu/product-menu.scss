@@ -1,0 +1,77 @@
+.product-menu {
+  height: 165px;
+  display: flex;
+  padding: 70px 60px 0 55px;
+  margin-left: 150px;
+
+  .product-title {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+
+    h2 {
+      font : normal normal bold 24px/29px "acumin-pro";
+      letter-spacing: 1.8px;
+    }
+    .title-divider {
+      border-top: 2px solid var(--line-yellow);
+      margin-top : 16px;
+      width: 47px;
+    }
+  }
+  .fruit-list {
+    padding-left: 360px;
+    width: 120px;
+    :last-child {
+      padding-bottom: 0;
+    }
+  }
+  .vegetable-list {
+    padding-left: 367px;
+    width: 120px;
+    :last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .list-items {
+    display: flex;
+    align-items: center;
+    height: 12px;
+    padding-bottom: 39px;
+
+    p {
+      margin-left: 16px;
+      font: normal normal bold 12px/14px "acumin-pro";
+      letter-spacing: 0.9px;
+    }
+    .list-divider {
+      border-top: 1px solid var(--line-yellow);
+      width: 25px;
+      transition: border-top-color 0.3s linear;
+    }
+  }
+
+  .list-items:hover{
+    .list-divider {
+      border-top: 1px solid var(--main-green);
+    }
+  }
+
+  .social-media {
+    padding-left: 435px;
+    :last-child {
+      padding-bottom: 0;
+    }
+    .sm-items {
+      padding-bottom: 28px;
+      width: 21px;
+      height: 21px;
+      img {
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+
+}
