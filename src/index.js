@@ -7,7 +7,7 @@ import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename="/tp-inte-web-cgslbs">
           <Navbar />
           <App />
       </BrowserRouter>
